@@ -18,6 +18,7 @@ class Island : GameObject
     
     override func Start()
     {
+        zRotation = -CGFloat.pi / 2
         zPosition = Layer.island.rawValue
         horizontalSpeed = 5.0
         Reset()
