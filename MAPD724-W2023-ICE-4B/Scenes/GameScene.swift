@@ -19,11 +19,12 @@ class GameScene: SKScene
         // add the first ocean to the Scene
         ocean1 = Ocean()
         ocean1?.Reset()
+        ocean1?.position.x = 0
         addChild(ocean1!)
         
         // add the second ocean to the scene
         ocean2 = Ocean()
-        ocean2?.position.y = -627
+        ocean2?.position.x = 2880
         addChild(ocean2!)
         
         // add the player to the Scene

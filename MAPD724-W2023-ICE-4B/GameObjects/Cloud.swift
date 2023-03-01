@@ -18,6 +18,7 @@ class Cloud : GameObject
     
     override func Start()
     {
+        zRotation = -CGFloat.pi / 2
         zPosition = Layer.cloud.rawValue
         alpha = 0.5 // 50% transparent
         Reset()
@@ -25,7 +26,7 @@ class Cloud : GameObject
     
     override func Update()
     {
-        Move()
+        //Move()
         CheckBounds()
     }
     

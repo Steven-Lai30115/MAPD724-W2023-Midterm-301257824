@@ -16,6 +16,8 @@ class Ocean : GameObject
     
     override func Start()
     {
+        // rotate the ocean image
+        zRotation = -CGFloat.pi / 2
         zPosition = Layer.ocean.rawValue
         verticalSpeed = 5.0
     }
@@ -28,7 +30,7 @@ class Ocean : GameObject
     
     override func CheckBounds()
     {
-        if(position.y <= -2253)
+        if(position.x <= -2253)
         {
             Reset()
         }
@@ -36,11 +38,11 @@ class Ocean : GameObject
     
     override func Reset()
     {
-        position.y = 2253
+        position.x = 2253
     }
     
     func Move()
     {
-        position.y -= verticalSpeed!
+        position.x -= verticalSpeed!
     }
 }
