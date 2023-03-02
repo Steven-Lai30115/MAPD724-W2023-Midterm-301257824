@@ -19,7 +19,7 @@ class Ocean : GameObject
         // rotate the ocean image
         zRotation = -CGFloat.pi / 2
         zPosition = Layer.ocean.rawValue
-        verticalSpeed = 5.0
+        horizontalSpeed = 5.0
     }
     
     override func Update()
@@ -43,6 +43,6 @@ class Ocean : GameObject
     
     func Move()
     {
-        position.x -= verticalSpeed!
+        position.x -= horizontalSpeed!
     }
 }
